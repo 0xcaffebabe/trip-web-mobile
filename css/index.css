@@ -1,0 +1,196 @@
+body {
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma,"Lucida Grande",Verdana,"Microsoft Yahei",STXihei,hei;
+    color: #000;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+    background: #fafafc;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+div {
+    box-sizing: border-box;
+}
+/* search */
+.search {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    min-width: 320px;
+    max-width: 540px;
+    height: 44px;
+    
+    border-top: 1px solid #f6f6f6;
+    border-bottom: 1px solid #f6f6f6;
+}
+.search_box {
+    flex: 1;
+    height: 26px;
+    line-height: 24px;
+    margin: 6px 10px;
+    padding-left: 40px;
+    border-radius: 50px;
+    font-size: 12px;
+    color: #666;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    background-color: white;
+}
+.search_box::before {
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    width: 35px;
+    height: 100%;
+    overflow: hidden;
+    background: url(http://pic.c-ctrip.com/platform/h5/home/home-common-sprite2x@v7.15.png) 15px 7px no-repeat;
+    background-size: 21px auto;
+    content: "";
+}
+
+.user {
+    width: 44px;
+    height: 44px;
+    
+    font-size: 12px;
+    text-align: center;
+    color: white;
+}
+.user::before {
+    content: "\0020";
+    width: 22px;
+    height: 22px;
+    background: url(http://pic.c-ctrip.com/platform/h5/home/home-common-sprite2x@v7.15.png) 1px -36px no-repeat;
+    background-size: 21px auto;
+    margin: 5px auto 0;
+    display: block;
+}
+/* focus */
+.focus img {
+    width: 100%;
+}
+ /* local-nav */
+ .local-nav {
+     position: relative;
+     
+     display: flex;
+     height: 64px;
+     margin: 3px 4px;
+     padding: 0;
+     margin-top: -20px;
+     background-color: #fff;
+     border-radius: 8px;
+     z-index: 999;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+ }
+ .local-nav li {
+     flex: 1;
+ }
+ .local-nav a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #666;
+ }
+ .local-nav a span {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-image: url(http://pic.c-ctrip.com/platform/h5/home/home-fivemain-sprite2x@v7.15.png);
+    background-repeat: no-repeat;
+    background-size: 40px auto;
+    display: block;
+ }
+ /* nav */
+ .nav {
+     overflow: hidden;
+     margin: 10px 4px 3px;
+     border-radius: 8px;
+ }
+ .nav-common {
+     display: flex;
+     height: 88px;
+     background: linear-gradient(to right,#fa5956,#fb8650 54%);
+ }
+ .nav-common:nth-child(2){
+    background: linear-gradient(to right,#4b8fed,#53bced);
+ }
+ .nav-common:nth-child(2) {
+     margin: 2px 0;;
+ }
+ .nav-common:nth-child(3) {
+    background: linear-gradient(to right,#34c2aa,#6cd557);
+ }
+ .nav-items {
+    flex:1;
+ }
+ .nav-items:nth-child(1) {
+    flex: 1;
+}
+ .nav-items:nth-child(2) {
+     float: 2;
+     border-left:1px solid white ;
+     border-right:1px solid white ;
+ }
+ .nav-items:nth-child(3) {
+    flex: 3;
+}
+ .nav-items {
+     flex: 2;
+     text-align: center;
+     line-height: 44px;
+     color: white;
+ }
+ .subnav-entry {
+     display: flex;
+     flex-wrap: wrap;
+ }
+ .subnav-entry li {
+    width: 20%;
+ }
+ .subnav-entry a {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     color: #666;
+ }
+ .subnav-entry span {
+     width: 28px;
+     height: 28px;
+     background: url(http://pic.c-ctrip.com/platform/h5/home/un_ico_subnav2x@v7.152.png);
+     background-size: 28px auto;
+ }
+ /* sales */
+ .sales-hd {
+     height: 44px;
+     border-bottom: 1px solid #ccc;
+ }
+ .sales-hd h2 {
+     position: relative;
+     text-indent: -999px;
+     overflow: hidden;
+ }
+ .sales-hd h2::after {
+     position: absolute;
+     top: 10px;
+     left: 20px;
+     content: "";
+     width: 79px;
+     height: 15px;
+     background-color: pink;
+     
+ }
+ .more {
+     position: absolute;
+     float: right;
+     right: 10px;
+ }
